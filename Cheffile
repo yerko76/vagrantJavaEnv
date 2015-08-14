@@ -1,0 +1,14 @@
+# encoding: utf-8
+
+site 'http://community.opscode.com/api/v1'
+require 'certified'
+cookbook 'build-essential', {}
+cookbook 'java', '= 1.7.0'
+cookbook 'rvm', {:github=>"fnichol/chef-rvm", :ref=>"v0.9.0"}
+cookbook 'nodejs', {:github=>"mdxp/nodejs-cookbook"}
+cookbook 'git', {}
+cookbook 'vim', {}
+cookbook 'subversion', {}
+cookbook 'tmux', {}
+cookbook 'gradle', {}
+cookbook "mongodb", {:github=>"edelight/chef-mongodb", :ref=>"0.16.0"}
